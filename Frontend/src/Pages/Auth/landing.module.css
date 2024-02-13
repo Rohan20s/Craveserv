@@ -1,0 +1,254 @@
+@import "../../index.css";
+
+
+.absoluteScreen {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    min-width: 300px;
+    width: 30%;
+    min-height: 300px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 10;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-height: 130px;
+}
+
+.subHeading {
+    font-size: var(--subHeading-text-size);
+    padding: 30px 0;
+    font-weight: 100;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.closeIcon {
+    width: 30px;
+    height: 30px;
+    margin: 20px 0;
+}
+
+.inputContainer {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid grey;
+    font-size: var(--list-text-size);
+    color: var(--fade-primary);
+    
+}
+
+.inputContainer:focus{
+  outline: none;
+}
+
+.label {
+    font-size: var(--list-text-size);
+}
+
+.otpBtn {
+    width: 100%;
+    min-width: 15rem;
+    min-height: 44px;
+    margin-top: 20px;
+    display: inline-flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border-radius: 0.6rem;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnText {
+    display: inline-flex;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* min-width: 15rem; */
+    min-height: 65px;
+    line-height: 44px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: var(--list-text-size);
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    white-space: nowrap;
+    background: rgb(239, 79, 95);
+    border-color: rgb(239, 79, 95);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 0.6rem;
+    padding: 0px 1.6rem;
+    transition: transform 0.25s ease 0s, opacity 0.25s ease 0s, box-shadow 0.25s ease 0s;
+    outline: none !important;
+}
+
+.orText {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: var(--list-text-size);
+    color: var(--fade-primary);
+    position: relative;
+
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #f9f9f9;
+    top: 0;
+    bottom: 0;
+    height: 1px;
+    margin: auto 0;
+}
+
+
+.optionBtn {
+    width: 100%;
+    min-width: 15rem;
+    min-height: 44px;
+    margin-top: 30px;
+    display: inline-flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border-radius: 0.6rem;
+    background: transparent;
+    padding: 0px;
+    border: 1px solid var(--fade-primary);
+    cursor: pointer;
+    justify-content: center;
+}
+
+.optionText {
+    display: inline-flex;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    /* justify-content: center; */
+    height: 100%;
+    /* width: 100%; */
+    /* min-width: 15rem; */
+    min-height: 65px;
+    line-height: 44px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: var(--list-text-size);
+    font-weight: 300;
+    color: var(--fade-primary);
+    opacity: 1;
+    white-space: nowrap;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 0.6rem;
+    padding: 0px 1rem;
+    transition: transform 0.25s ease 0s, opacity 0.25s ease 0s, box-shadow 0.25s ease 0s;
+    outline: none !important;
+}
+
+.optionIcon {
+    font-size: 30px;
+    margin: auto 0;
+    color: var(--bg-secondary);
+}
+
+.registertext {
+    height: 30px;
+    display: block;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: var(--list-text-size);
+    color: var(--fade-primary);
+}
+
+.registerLink {
+    font-size: var(--list-text-size);
+    color: var(--bg-secondary);
+}
+
+.conformationText{
+    font-size: var(--list-text-size);
+    text-align: center;
+}
+
+.conformationHighlight{
+    font-size: var(--list-text-size);
+    color: var(--bg-secondary);
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.errorText{
+    color:red;
+}
+
+@media screen and (max-width:1000px) {
+    
+
+    .optionText {
+        min-height: unset;
+    }
+
+    .formContainer {
+        padding: 10px 20px;
+    }
+
+    .inputContainer {
+        height: 40px;
+    }
+
+    .header {
+        max-height: 80px;
+    }
+
+    .orText {
+        margin-top: 15px;
+    }
+
+    .optionBtn {
+        margin-top: 15px;
+    }
+
+    .closeIcon {
+        width: 20px;
+        height: 20px;
+        margin: 20px 0;
+    }
+
+}

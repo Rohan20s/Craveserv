@@ -1,0 +1,26 @@
+Features - 
+
+- Hotel Registrations with location detections
+
+- User login, Registrations - google auth , phone otp login , email Otp login , email otp registration ,
+  In Mid of otp detection close ask for confirmation
+
+- Hotel Registration - Owner Name , hotel name , adharcard verification , Adharcard otp send ,
+  Location , email , Alternate number , Sub heading , Image , Hotel Images - 3 , Certifications , Since    
+
+- Hotel multi-Tenant schema - Category , Item , Waiter 
+
+- Hotel profile page - With crub operation
+
+- hotel admin - Category , Item Crud 
+
+- User profile page - with crud operation
+
+- Landing page - Hotel suggestion according to user location and choices
+
+- User side - List page according to hotel and go inside hotel see their menu
+
+- Menu - Category and item will show and prices shows up with filters and search functionality
+
+
+

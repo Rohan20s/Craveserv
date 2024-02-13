@@ -1,0 +1,97 @@
+
+
+@font-face {
+  font-family: Font;
+  src: url(Assests/Okra\ Medium.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Okra, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root{
+  --bg-primary: #fff;
+  --fade-primary:#7c7c7c;
+  --bg-secondary: rgb(239, 79, 95);
+  --list-text-size: 1.8rem;
+  --text-size: 1.4rem;
+  --sub-text-size:1rem;
+  --subHeading-text-size: 3.6rem;
+}
+
+
+
+@media screen and (max-width:1200px){
+  :root{
+    --bg-primary: #fff;
+    --fade-primary:#7c7c7c;
+    --bg-secondary: rgb(239, 79, 95);
+    --list-text-size: 1.4rem;
+    --text-size: 1.2rem;
+    --sub-text-size:.9rem;
+    --subHeading-text-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width:900px){
+  :root{
+    --bg-primary: #fff;
+    --fade-primary:#7c7c7c;
+    --bg-secondary: rgb(239, 79, 95);
+    --list-text-size: 1.2rem;
+    --text-size: 1rem;
+    --sub-text-size:.9rem;
+    --subHeading-text-size: 2rem;
+  }
+}
+
+@media screen and (max-width:768px){
+  :root{
+    --bg-primary: #fff;
+    --fade-primary:#7c7c7c;
+    --bg-secondary: rgb(239, 79, 95);
+    --list-text-size: 1rem;
+    --text-size: .9rem;
+    --sub-text-size:.7rem;
+    --subHeading-text-size: 1.5rem;
+  }
+}
+
+
+.react-tel-input .form-control{
+  min-width: 300px !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding-left: 75PX !important;
+  font-size: var(--list-text-size) !important;
+  color: var(--fade-primary);
+}
+
+.react-tel-input{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.react-tel-input .flag {
+  transform: scale(2);
+}
+
+.react-tel-input .selected-flag {
+  outline: none;
+  position: relative;
+  width: 67px !important;
+  height: 100%;
+  padding: 0 0 0 17px !important;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.react-tel-input .country-list .country-name {
+  margin-left: 10px;
+  font-size: var(--text-size) !important;
+  color: var(--fade-primary);
+}
